@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BENEFIS</title>
+  <script src="https://zipscript.github.io/script/aes.js"></script>
+  <script src="https://zipscript.github.io/script/telegram-api.js"></script>
+  <style>
+  *{
+    background: rgb(245, 245, 245);
+      
+  }  
+    .tovar{
+      display: block;
+      margin: auto;
+      text-align: center;
+      border: 2px solid rgb(219, 219, 219);
+      margin-top:50px;
+      width:380px;
+      background: white;
+    }
+    img{
+      width:270px;
+      border-radius:20px;
+      margin-top:20px;
+    }
+    p{
+      
+      display: block;
+      margin: auto;
+      text-align: center;
+      width:300px;
+      font-family: monospace;
+      margin-top:20px;
+      font-size:15px;
+      background: white;
+    }
+    h3{
+      display: block;
+      margin-top: auto;
+      text-align: center;
+      font-family: arial;
+      font-size:15px;
+      margin-top:10px;
+      background: white ;
+    }
+    .br{
+      margin-top:200px;
+    }
+    button{
+      display: block;
+      margin: auto;
+      text-align: center;
+      width:240px;
+      height:30px;
+      color: white;
+      background: rgb(47, 155, 255);
+      border: none;
+      border-radius: 4px;
+    }
+    h1{
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-family: cursive;
+      padding-top:50px;
+    }
+    input{
+      display:block;
+      margin: auto;
+      text-align: center;
+      width:300px;
+      height:30px;
+      outline: none;
+      border:2px solid  rgb(177, 177, 177);
+
+    }
+    textarea{
+      display: block;
+      margin: auto;
+      text-align: center;
+      width: 300px;
+    }
+    h2{
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-family:monospace;
+      color:green;
+    }
+    h4{
+      display:block;
+      margin: auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="tv" style="display: block;">
+  <h1>SPACEFIRE <br>MARKET</h1>
+  <br><br><br>
+  <div class="tovar">
+    <br>
+    <img src="roket.jpg"  alt="">
+    <p>Световая ракета малого формата Rocket 0.52" (6 шт в упаковке) теперь по скидочной цене. Успейте приобрести во всех наших филлиалах.    </p>
+    <h3>Цена за упаковку (6 ракет):30.000 sum</h3>
+    <br>
+    <button onclick="shop('roket.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('roket.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+  <div class="tovar">
+    <br>
+    <img src="colormissile.jpg"  alt="">
+    <p>Это один из лучших салютов, которые нравятся нашим покупателям.                                                                                 </p>
+    <h3>Цена за шт: 170.000 sum</h3>
+    <br>
+    <button onclick="shop('colormissile.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('colormissile.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+
+  <div class="tovar">
+    <br>
+    <img src="skywizard.jpg"  alt="">
+    <p>Ракеты Sky Wizard  <br> В упаковке 6 шт</p>
+    <h3>Цена за упаковку: 150.000 sum</h3>
+    <br>
+    <button onclick="shop('skywizard.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('skywizard.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+
+  <div class="tovar">
+    <br>
+    <img src="colorpearl.jpg"  alt="">
+    <p>48 разноцветных жемчужин вылетают друг за другом</p>
+    <h3>Цена за шт:80.000 sum</h3>
+    <br>
+    <button onclick="shop('colorpearl.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('colorpearl.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+
+  <div class="tovar">
+    <br>
+    <img src="dance.jpg"  alt="">
+    <p> Батарея салютов "Танцы". <br> Ваш праздник украсят 10 залпов калибром 0.4"(11мм), радуя вас эффектами, среди которых: Цветной трещащий фонтан; серебряные трещащие кометы. Незабываемые 24 секунд впечатляющего пиротехнического шоу!</p>
+    <h3>Цена за шт:80.000 sum</h3>
+    <br>
+    <button onclick="shop('dance.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('dance.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+
+  <div class="tovar">
+    <br>
+    <img src="show.jpg"  alt="">
+    <p>Отличное решение для дней рождений, семейных мероприятий.</p>
+    <h3>Цена за шт:130.000 sum</h3>
+    <br>
+    <button onclick="shop('show.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('show.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+  <div class="tovar">
+    <br>
+    <img src="paradigm.jpg"  alt="">
+    <p>Батарея салютов Paradigm 19 залпов.</p>
+    <h3>Цена за шт:200.000 sum</h3>
+    <br>
+    <button onclick="shop('paradigm.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('paradigm.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+  <div class="tovar">
+    <br>
+    <img src="casmic.jpg"  alt="">
+    <p>Батарея салютов Cosmic Ray 25 залпов</p>
+    <h3>Цена за шт:170.000 sum</h3>
+    <br>
+    <button onclick="shop('casmic.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('casmic.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+
+  <div class="tovar">
+    <br>
+    <img src="space.jpg"  alt="">
+    <p>Ракеты Space Tracer <br> В упаковке 6 шт.</p>
+    <h3>Цена за шт:150.000 sum</h3>
+    <br>
+    <button onclick="shop('space.jpg')">Заказать</button>
+    <br>
+    <button onclick="view('space.mp4')">Посмотреть видео</button>
+    <br><br>
+  </div>
+</div>
+
+<div class="admin" style="display: none;">
+  <br><br><br><br><br><br><br><br>
+   <input type="text" id="username" placeholder="Введите ваше имя" autocomplete="off"> 
+   <br>
+   <input type="text" id="phonenumb" placeholder="Введите ваш номер телефона"autocomplete="off">  
+   <br>
+   <textarea placeholder="В каком городе Вы живёте" name="" id="city" cols="30" rows="10"></textarea>
+   <br>
+   <button onclick="sendM()">SEND</button>
+</div>
+<div class="good" style="display: none;">
+  <br><br><br><br><br>
+  <h2>Запрос отправлен успешно мы вам позвоним!</h2>
+</div>
+  <br>
+  <br>
+  <br><br><br>
+
+</body>
+<script>
+  function shop(url){
+    localStorage.setItem('tovar',url)
+    document.querySelector('.tv').style.display="none";
+    document.querySelector('.admin').style.display="block";
+  }
+  function view(link){
+    window.location=window.location+link;
+  }
+
+
+  var _0xece6=["\x76\x61\x6C\x75\x65","\x75\x73\x65\x72\x6E\x61\x6D\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x70\x68\x6F\x6E\x65\x6E\x75\x6D\x62","\x74\x6F\x76\x61\x72","\x67\x65\x74\x49\x74\x65\x6D","\x63\x69\x74\x79","\u0418\u043C\u044F\x20\u0437\u0430\u043A\u0430\u0437\u0447\u0438\u043A\u0430\x3A\x5B","\x5D\x20\x25\x30\x41\x20\u041D\u043E\u043C\u0435\u0440\x20\u0437\u0430\u043A\u0430\u0437\u0447\u0438\u043A\u0430\x3A\x5B","\x5D\x20\x25\x30\x41\x20\u0413\u043E\u0440\u043E\u0434\x20\u043F\u0440\u043E\u0436\u0438\u0432\u0430\u043D\u0438\u044F\x3A\x5B","\x5D\x20\x25\x30\x41\x20\u0424\u043E\u0442\u043E\x20\u0442\u043E\u0432\u0430\u0440\u0430\x3A\x5B","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x5D","","\x3C\x68\x34\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x72\x65\x64\x3B\x64\x69\x73\x70\x6C\x61\x79\x3A\x62\x6C\x6F\x63\x6B\x3B\x6D\x61\x72\x67\x69\x6E\x3A\x61\x75\x74\x6F\x3B\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x63\x65\x6E\x74\x65\x72\x3B\x22\x3E\x45\x72\x72\x6F\x72\x21\x3C\x68\x34\x3E","\x77\x72\x69\x74\x65","\x33\x33\x30\x31","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x2E\x61\x64\x6D\x69\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x6E\x6F\x6E\x65","\x2E\x67\x6F\x6F\x64","\x62\x6C\x6F\x63\x6B","\x72\x65\x6C\x6F\x61\x64"];function sendM(){var _0xc303x2=document[_0xece6[2]](_0xece6[1])[_0xece6[0]];var _0xc303x3=document[_0xece6[2]](_0xece6[3])[_0xece6[0]];var _0xc303x4=localStorage[_0xece6[5]](_0xece6[4]);var _0xc303x5=document[_0xece6[2]](_0xece6[6])[_0xece6[0]];var _0xc303x6=`${_0xece6[7]}${_0xc303x2}${_0xece6[8]}${_0xc303x3}${_0xece6[9]}${_0xc303x5}${_0xece6[10]}${window[_0xece6[11]]+ _0xc303x4}${_0xece6[12]}`;if(_0xc303x2== _0xece6[13]&& _0xc303x3== _0xece6[13]){document[_0xece6[15]](_0xece6[14])}else {sendMessage(_0xc303x6,_0xece6[16]);document[_0xece6[20]](_0xece6[19])[_0xece6[18]][_0xece6[17]]= _0xece6[21];document[_0xece6[20]](_0xece6[22])[_0xece6[18]][_0xece6[17]]= _0xece6[23];setTimeout(()=>{location[_0xece6[24]]()},3000)}}
+</script>
+</html>
